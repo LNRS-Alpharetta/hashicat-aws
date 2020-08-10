@@ -3,7 +3,7 @@ provider "aws" {
   region  = var.region
 }
 
-resource aws_vpc "hashicat" {
+resource aws_vpc_module "hashicat" {
   cidr_block           = var.address_space
   enable_dns_hostnames = true
 
