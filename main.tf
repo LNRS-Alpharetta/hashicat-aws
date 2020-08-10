@@ -4,6 +4,7 @@ provider "aws" {
 }
 
 resource aws_vpc "hashicat" {
+  cidr                 = var.address_space
   cidr_block           = var.address_space
   enable_dns_hostnames = true
 
